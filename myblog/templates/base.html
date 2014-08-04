@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{% block head_title %}Welcome to my blog{% endblock %}</title>
+    </head>
+    <body>
+    	<div class="page-header"> 
+    		<a href= "{%url 'myblog.views.post_new'%}" class="top-menu"></a>
+    		<h1><a href="/post/new/">Django Girls Blog</a>
+    		</h1></div>
+        <h1>{% block title %}Welcome to my block{% endblock %}</h1>
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>
